@@ -5,6 +5,8 @@ GET http://localhost:3000
 GET http://localhost:3000/books
 
 ###
+GET http://localhost:3000/books/609a850cf9e4747ef299c853
+###
 
 POST http://localhost:3000/books
 Content-Type: application/json

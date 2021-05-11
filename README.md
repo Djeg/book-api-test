@@ -107,3 +107,11 @@
 1. Dans le fichier `src/index.js` ajouter le schéma `createBookSchema`
 2. Attacher le schema à la route `POST /books`
 3. On commit et on push sur github
+
+### Exo 13 - Récupérer un seule livre
+
+1. Dans le `src/index.js` ajouter une route `GET /book/:id`
+2. Récupérer le paramètre id depuis la route
+3. Récupérer le livre avec l'id depuis MongoDB
+4. Retourner le livre
+5. On commit et on push

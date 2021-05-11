@@ -33,6 +33,22 @@ app.get('/books', async () => {
   return books
 })
 
+// On créé une route qui retourne qu'une livre par son
+// identifiant
+app.get('/books/:id', async (request) => {
+  // On récupére l'identifiant rentré dans notre url
+  const id = request.params.id
+
+  // On récupére notre collection mongodb
+  const collection = app.mongo.db.collection('books')
+
+  // On vas chercher un seule livre par son ID
+  const book = await collection.findOne({ _id: new app.mongo.ObjectId(id) })
+
+  // On retourne le livre récupéré depuis la base de données
+  return book
+})
+
 // On déclare un schèma qui nous permettra de valider
 // les données envoyé dans la request POST /books
 const createBookSchema = {
@@ -72,6 +88,13 @@ app.post('/books', {
 
   // On enregistre le livre dans la base de données
   const result = await collection.insertOne(book)
+
+  // A l'intérieur de result on as tout les opérations qui ont
+  // étaient enregistré.
+  // Pour accéder à tout ce qui a été enregistré dans la BDD
+  // on utilise result.ops
+  // Ici on as inséré un seul élément, result.ops sera donc
+  // un tableaux avec une seul valeur à l'intérieur: Notre livre.
 
   // On retourne le livre qui a été enregistré dans la base de
   // données
