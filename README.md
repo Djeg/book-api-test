@@ -34,3 +34,12 @@
 3. Vous pouvez tester en lancant la commande
    `yarn start` ou bien `npm start`
 4. Faire un commit et "push" sur github
+
+### Exo 4 - Installer Fastify
+
+1. On lance l'installation de fastify avec la commande `yarn add fastify` (vous pouvez
+   vérifier l'installation en regardant votre `package.json`)
+2. On ignore le versionning du répertoire `node_modules`:
+   1. créé un fichier `.gitignore` à la racine du projet
+   2. Ajouter la ligne `node_modules` dans le fichier `.gitignore`
+3. On commit et push sur github
