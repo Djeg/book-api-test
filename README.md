@@ -74,3 +74,9 @@
 3. On récupére tout les livres depuis notre collection
 4. On retourne les livres
 5. On commit et on push
+
+### Exo 9 - Installer et mettre en place nodemon
+
+1. Installer nodemon avec la commande `yarn add nodemon`
+2. Modifier le script `start` dans le `package.json` pour utiliser nodemon
+3. On commit et on push
