@@ -32,5 +32,5 @@
 ```
 
 3. Vous pouvez tester en lancant la commande
-   `yarn start` ou bien `npm install`
+   `yarn start` ou bien `npm start`
 4. Faire un commit et "push" sur github
