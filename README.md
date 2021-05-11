@@ -80,3 +80,13 @@
 1. Installer nodemon avec la commande `yarn add nodemon`
 2. Modifier le script `start` dans le `package.json` pour utiliser nodemon
 3. On commit et on push
+
+### Exo 10 - L'extension "REST Client"
+
+1. Installer l'extension VSCode "REST Client"
+2. Créé un fichier `api.http` à la racine du projet
+3. Ecrire une requête GET sur `http://localhost:3000`
+4. Ecrire une requête GET sur `http://localhost:3000/books` (Les requêtes sont séparé par `###`)
+5. Vous pouvez tester en appuyant sur "Send Request" au dessus
+   de votre requête.
+6. On commit et on push sur github
