@@ -51,3 +51,11 @@
 2. Vous pouvez lancer la commander `yarn start` pour tester votre server (vous pouvez
    appuyer sur Ctrl-C afin de quitter le server)
 3. On commit et on push
+
+### Exo 6 - afficher un text de bienvenue sur la route "`/`"
+
+1. Dans `src/index.js` ajouter une route get avec le chemin `/` et retourner
+   un objet json de votre choix
+2. Vous pouvez tester en demarant votre server (si dèja lancé vous pouvez l'arréter avec
+   la touche Ctrl-C dans votre terminal, pour lancer le server faire `yarn start`).
+3. On commit et on push
