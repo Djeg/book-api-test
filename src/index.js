@@ -11,6 +11,11 @@ app.get('/', async () => {
   return { text: "Welcome !" }
 })
 
+// Création de la route qui retourne tout les livres
+app.get('/books', async () => {
+  return []
+})
+
 // Cette fonction démarre notre server d'api
 const start = async () => {
   console.log('Lancement de notre server ...')
