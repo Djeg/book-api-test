@@ -101,3 +101,9 @@
 5. On retourne le livre qui a été enregistré dans la
    base de données
 6. On commit et on push
+
+### Exo 12 - Attacher un schéma de validation
+
+1. Dans le fichier `src/index.js` ajouter le schéma `createBookSchema`
+2. Attacher le schema à la route `POST /books`
+3. On commit et on push sur github
