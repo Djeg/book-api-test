@@ -11,3 +11,10 @@
 4. Dans un terminal (vscode) faire un commit
 5. Faire un « push » sur github
 6. Envoyer le lien du projet github sur le chat
+
+### Exo 2 - Mettre en place un package.json
+
+1. Lancer la commande `npm init`
+2. Renseigner dans "entry point" le chemin `src/index.js`
+3. Ajouter la ligne `"type": "module",` après la clefs `main` dans le `package.json`
+4. Faire un commit et pousser sur github
