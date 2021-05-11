@@ -90,3 +90,14 @@
 5. Vous pouvez tester en appuyant sur "Send Request" au dessus
    de votre requête.
 6. On commit et on push sur github
+
+### Exo 11 - Créer un livre
+
+1. On créer une route fastify `POST /books`
+2. On récupére les données de la requête en utilisant
+   `request.body`
+3. On récupére la collection `books` depuis mongodb
+4. On insére le livre dans la base de données
+5. On retourne le livre qui a été enregistré dans la
+   base de données
+6. On commit et on push

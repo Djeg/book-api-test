@@ -33,6 +33,25 @@ app.get('/books', async () => {
   return books
 })
 
+// On créé un route qui nous permettra d'ajouter (de créer) un
+// nouveau livre
+app.post('/books', async (request) => {
+  // Nous récupérons toutes les données qu'il y a dans le corp
+  // d'une requête. Cela correspond à notre livre
+  const book = request.body
+
+  // Pour enregistrer le livre dans ma BDD (mongodb)
+  // j'ai besoin de la collection
+  const collection = app.mongo.db.collection('books')
+
+  // On enregistre le livre dans la base de données
+  const result = await collection.insertOne(book)
+
+  // On retourne le livre qui a été enregistré dans la base de
+  // données
+  return result.ops[0]
+})
+
 // Cette fonction démarre notre server d'api
 const start = async () => {
   console.log('Lancement de notre server ...')
