@@ -17,9 +17,20 @@ app.get('/', async () => {
   return { text: "Welcome !" }
 })
 
-// Création de la route qui retourne tout les livres
+// On créé une route qui retourne tout les livres de notre
+// base de données (MongoDB)
 app.get('/books', async () => {
-  return []
+  // Mongo est une base de données qui contient des collection
+  // (c'est un peu comme des tables en SQL)
+  // Ici on récupére la collection "books"
+  const collection = app.mongo.db.collection('books')
+
+  // Sur cette collection nous pouvons utiliser plusieurs
+  // fonctions. Ici, nous allons récupérer TOUT les livres
+  const books = await collection.find().toArray()
+
+  // Nous retournons tout les livres de la base de données
+  return books
 })
 
 // Cette fonction démarre notre server d'api

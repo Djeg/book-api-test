@@ -66,3 +66,11 @@
 2. Configurer fastify mongo dans le fichier `index.js` (Vous pouvez utiliser l'url: `mongodb+srv://MyTodoApp:MyTodoApp@cluster0.obacx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`)
 3. Vous pouvez tester en lancant votre server (faire Ctrl-C si le server est dèja lancé, pour lancer le server la commande est `yarn start`)
 4. On commit et on push sur github
+
+### Exo 8 - Retourner tout les livres d'une BDD
+
+1. Créer la route `/books`
+2. On récupére la collection "books" depuis mongodb
+3. On récupére tout les livres depuis notre collection
+4. On retourne les livres
+5. On commit et on push
