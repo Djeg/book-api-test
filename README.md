@@ -18,3 +18,19 @@
 2. Renseigner dans "entry point" le chemin `src/index.js`
 3. Ajouter la ligne `"type": "module",` après la clefs `main` dans le `package.json`
 4. Faire un commit et pousser sur github
+
+### Exo 3 - Lancer un script js avec nodejs
+
+1. Créer le fichier `src/index.js` avec un console.log
+2. Ajouter un script dans `package.json` avec
+   la configuration suivante:
+
+```js
+"scripts": {
+    "start": "node src/index.js"
+}
+```
+
+3. Vous pouvez tester en lancant la commande
+   `yarn start` ou bien `npm install`
+4. Faire un commit et "push" sur github
