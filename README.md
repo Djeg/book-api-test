@@ -46,7 +46,7 @@
 
 ### Exo 5 - Un server fastify
 
-1. Dans `index.js` ajouter le code permettant de démarer un server sur le port
+1. Dans `src/index.js` ajouter le code permettant de démarer un server sur le port
    3000
 2. Vous pouvez lancer la commander `yarn start` pour tester votre server (vous pouvez
    appuyer sur Ctrl-C afin de quitter le server)
