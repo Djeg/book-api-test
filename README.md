@@ -43,3 +43,11 @@
    1. créé un fichier `.gitignore` à la racine du projet
    2. Ajouter la ligne `node_modules` dans le fichier `.gitignore`
 3. On commit et push sur github
+
+### Exo 5 - Un server fastify
+
+1. Dans `index.js` ajouter le code permettant de démarer un server sur le port
+   3000
+2. Vous pouvez lancer la commander `yarn start` pour tester votre server (vous pouvez
+   appuyer sur Ctrl-C afin de quitter le server)
+3. On commit et on push
