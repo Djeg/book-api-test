@@ -1,6 +1,10 @@
 // On importe la libraire fastify
 import fastify from 'fastify'
 import fastifyMongo from 'fastify-mongodb'
+import { config } from 'dotenv'
+
+// Initialise les valeurs de configuration (lecture du fichier .env)
+config()
 
 // On créé une application fastify en utilisant
 // L'import de notre librairie. On configure
@@ -13,7 +17,7 @@ const app = fastify({ logger: true })
 
 // On connécte la base de données MongoDB
 app.register(fastifyMongo, {
-  url: 'mongodb+srv://MyTodoApp:MyTodoApp@cluster0.obacx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+  url: process.env.MONGO_URL
 })
 
 // On créé une route fastify sur l'URI "/"

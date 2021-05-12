@@ -154,3 +154,11 @@ yarn start
 1. Créer un fichier `.env.dist` avec l'url MONGO_DB
 2. Ignorer le fichier `.env` dans le fichier `.gitignore`
 3. On commit et on push
+
+### Exo 16 - Utiliser des variables d'environments
+
+1. Installer la librairie "dotenv" (`yarn add dotenv`)
+2. Importer la fonction `config` depuis `dotenv`
+3. Lancer la fonctions `config`
+4. Remplacer l'url mongo db par notre valeur de configuration `process.env.MONGO_URL`
+5. On commit et push
