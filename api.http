@@ -22,7 +22,7 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3000/books/609a8b38ecaf8b8aa776d70a
+PATCH http://localhost:3000/books/609a87467fdc501fd1b9566a
 Content-Type: application/json
 
 {
@@ -31,4 +31,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/books/609a87137fdc501fd1b95669
+DELETE http://localhost:3000/books/609a88c750bad1212a43baa8

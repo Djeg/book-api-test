@@ -97,7 +97,7 @@ app.patch('/books/:id', async (request) => {
 })
 
 // Suppression d'un livre
-app.delete('/books/:id', async (request) => {
+app.delete('/books/:id', async (request, reply) => {
   const id = request.params.id
   // Pour supprimer un livre avec MongoDB
   // il faut utiliser : await collection.deleteOne({ _id: new app.mongo.ObjectId(id) })
@@ -106,6 +106,8 @@ app.delete('/books/:id', async (request) => {
   await collection.deleteOne({
     _id: new app.mongo.ObjectId(id)
   })
+
+  reply.status(204)
 
   return null
 })
@@ -138,7 +140,7 @@ app.post('/books', {
   schema: {
     body: createBookSchema
   }
-}, async (request) => {
+}, async (request, reply) => {
   // Nous récupérons toutes les données qu'il y a dans le corp
   // d'une requête. Cela correspond à notre livre
   const book = request.body
@@ -159,6 +161,7 @@ app.post('/books', {
 
   // On retourne le livre qui a été enregistré dans la base de
   // données
+  reply.status(201)
   return result.ops[0]
 })
 
