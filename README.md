@@ -169,3 +169,10 @@ yarn start
    dans le fichier `.env`)
 2. Changer dans `src/index.js` le port du server
 3. On commit et push
+
+### Exo 18 - Installer le plugin CORS
+
+1. Installer le plugin : `yarn add fastify-cors`
+2. Importer le plugin dans `src/index.js`
+3. Enregistrer le plugin dans `src/index.js`
+4. On commit et on push
