@@ -22,12 +22,13 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3000/books/609a850cf9e4747ef299c853
+PATCH http://localhost:3000/books/609a8b38ecaf8b8aa776d70a
 Content-Type: application/json
 
 {
-  // Mettre ici les champs du livre à mettre à jour
+  "title": "Un nouveau titre 2 !",
+  "description": "ça marche ??"
 }
 
 ###
-DELETE http://localhost:3000/books/609a850cf9e4747ef299c853
+DELETE http://localhost:3000/books/609a87137fdc501fd1b95669

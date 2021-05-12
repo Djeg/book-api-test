@@ -51,14 +51,45 @@ app.get('/books/:id', async (request) => {
 
 // Mise à jour d'un livre
 app.patch('/books/:id', async (request) => {
+  const id = request.params.id
+  const updateFields = request.body
   // Pour mettre à jour un livre avec MongoDB
   // il faut utiliser : await collection.updateOne({ _id: new app.mongo.ObjectId(id) }, nouveauLivre)
+  const collection = app.mongo.db.collection('books')
+
+  // Nous mettons le livre avec l'identifiant donnée
+  // en luis spécifiant les champs à changer en
+  // second argument
+  await collection.updateOne(
+    // Ici on spécifie des "Query" qui nous permettent
+    // de définir le livre à mettre à jour
+    { _id: new app.mongo.ObjectId(id) },
+    // On specifie dans le clefs "$set" les champs à mettre
+    // à jour
+    { $set: updateFields },
+  )
+
+  // On récupére le livre mis à jour dans la base de données
+  const book = await collection.findOne({
+    _id: new app.mongo.ObjectId(id),
+  })
+
+  // On retourne le livre
+  return book
 })
 
 // Suppression d'un livre
 app.delete('/books/:id', async (request) => {
+  const id = request.params.id
   // Pour supprimer un livre avec MongoDB
   // il faut utiliser : await collection.deleteOne({ _id: new app.mongo.ObjectId(id) })
+  const collection = app.mongo.db.collection('books')
+
+  await collection.deleteOne({
+    _id: new app.mongo.ObjectId(id)
+  })
+
+  return null
 })
 
 // On déclare un schèma qui nous permettra de valider
