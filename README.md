@@ -162,3 +162,10 @@ yarn start
 3. Lancer la fonctions `config`
 4. Remplacer l'url mongo db par notre valeur de configuration `process.env.MONGO_URL`
 5. On commit et push
+
+### Exo 17 - Transform le port en configuration
+
+1. Ajouter la variable `PORT` dans le fichier `.env.dist` (vous pouvez aussi l'ajouter
+   dans le fichier `.env`)
+2. Changer dans `src/index.js` le port du server
+3. On commit et push

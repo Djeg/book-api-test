@@ -177,9 +177,9 @@ app.post('/books', {
 const start = async () => {
   console.log('Lancement de notre server ...')
 
-  await app.listen(3000)
+  await app.listen(process.env.PORT)
 
-  console.log('Le server est lancé, vous pouvez visiter: http://localhost:3000')
+  console.log(`Le server est lancé, vous pouvez visiter: http://localhost:${process.env.PORT}`)
 }
 
 // Lancement de la fonction de démarage
