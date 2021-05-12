@@ -7,6 +7,10 @@ import fastifyMongo from 'fastify-mongodb'
 // fastify pour afficher des logs
 const app = fastify({ logger: true })
 
+// David - Implémenter le service de paiement
+// Jean - La connexion des utilisateur
+// Jacque - L'implémentation des autheurs de livre
+
 // On connécte la base de données MongoDB
 app.register(fastifyMongo, {
   url: 'mongodb+srv://MyTodoApp:MyTodoApp@cluster0.obacx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
