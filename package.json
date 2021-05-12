@@ -24,5 +24,8 @@
     "fastify-cors": "^6.0.1",
     "fastify-mongodb": "^2.0.1",
     "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
