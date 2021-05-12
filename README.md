@@ -148,3 +148,9 @@ yarn start
    2. `DELETE /books/:id`
 1. Vous pouvez tester avec le fichier `api.http`
 1. On commit et on push
+
+### Exo 15 - Mettre de la configuration
+
+1. Créer un fichier `.env.dist` avec l'url MONGO_DB
+2. Ignorer le fichier `.env` dans le fichier `.gitignore`
+3. On commit et on push
