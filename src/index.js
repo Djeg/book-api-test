@@ -182,7 +182,7 @@ app.post('/books', {
 const start = async () => {
   console.log('Lancement de notre server ...')
 
-  await app.listen(process.env.PORT)
+  await app.listen(process.env.PORT, '0.0.0.0')
 
   console.log(`Le server est lancé, vous pouvez visiter: http://localhost:${process.env.PORT}`)
 }
