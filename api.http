@@ -19,3 +19,15 @@ Content-Type: application/json
   "stars": 5,
   "price": 10.2
 }
+
+###
+
+PATCH http://localhost:3000/books/609a850cf9e4747ef299c853
+Content-Type: application/json
+
+{
+  // Mettre ici les champs du livre à mettre à jour
+}
+
+###
+DELETE http://localhost:3000/books/609a850cf9e4747ef299c853

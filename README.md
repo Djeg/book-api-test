@@ -115,3 +115,11 @@
 3. Récupérer le livre avec l'id depuis MongoDB
 4. Retourner le livre
 5. On commit et on push
+
+### Exo 14 - Mettre à jour et supprimer
+
+1. Dans le `src/index.js` écrire le code pour ces deux routes:
+   1. `PATCH /books/:id`
+   2. `DELETE /books/:id`
+1. Vous pouvez tester avec le fichier `api.http`
+1. On commit et on push
