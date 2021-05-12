@@ -176,3 +176,9 @@ yarn start
 2. Importer le plugin dans `src/index.js`
 3. Enregistrer le plugin dans `src/index.js`
 4. On commit et on push
+
+### Exo 19 - Ajouter la configuration HOST
+
+1. Dans le fichier `.env.dist` ajouter la valeur de configuration `HOST`
+2. Dans le fichier `src/index.js` et dans la fonction `app.listen` ajouter `process.env.HOST`
+3. On commit et on push
